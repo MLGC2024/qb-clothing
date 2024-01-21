@@ -431,6 +431,7 @@ local function openMenu(allowedMenus)
     SetCursorLocation(0.9, 0.25)
     FreezeEntityPosition(PlayerPedId(), true)
     enableCam()
+    TriggerEvent('qb-clothing:client->open') -- added by Pamela for keep-bags
 end
 local function disableCam()
     RenderScriptCams(false, true, 250, 1, 0)
